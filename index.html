@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LANDY Gifts & Crafts | Seasonal Gifts and Home Decor</title>
+    <meta
+      name="description"
+      content="Quanzhou Landy Gifts & Crafts designs and manufactures seasonal gifts and home decor for global retail markets."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LANDY Gifts & Crafts | A Year of Gift Stories" />
+    <meta property="og:description" content="Travel through nine immersive seasonal gift worlds, from everyday living to Christmas night." />
+    <meta property="og:image" content="assets/images/og-landy-journey.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LANDY Gifts & Crafts | A Year of Gift Stories" />
+    <meta name="twitter:description" content="Travel through nine immersive seasonal gift worlds, from everyday living to Christmas night." />
+    <meta name="twitter:image" content="assets/images/og-landy-journey.webp" />
+    <link rel="icon" href="assets/brand/landy-gift-mark-original.svg?v=20260818s" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 英文、简体中文与繁体中文字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400..900;1,400..900&family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css?v=20260825a" />
+  </head>
+  <body lang="en">
+    <!-- 新增液态玻璃光谱光标 -->
+    <div id="liquid-cursor"></div>
+    <div id="cursor-dot"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <!-- 彻底移除 data-glass 以消除关联的白色雾状伪元素 -->
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="LANDY home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/brand/landy-gift-mark-original.svg?v=20260818s" alt="" /></span>
+        <span>
+          <strong>LANDY</strong>
+          <small data-i18n="brand_sub">Gifts & Crafts</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-sliding-capsule" id="nav-capsule"></div>
+        
+        <!-- 新增：返回首屏首页 -->
+        <a href="#top"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 10 8-6 8 6v9a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z"/></svg><span data-i18n="nav_home">Home</span></a>
+        
+        <!-- 合并：产品展示（下拉子菜单：产品系列、产品图册） -->
+        <div class="nav-item">
+          <a class="nav-group-parent" href="#collections"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><rect x="14" y="14" width="6" height="6" rx="1.5"/></svg><span data-i18n="nav_products_main">Products Show</span></a>
+          <div class="dropdown-menu">
+            <a href="#collections"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M8 2.8h8M8 21.2h8"/></svg><span data-i18n="nav_collections">Collections</span></a>
+            <a href="#product-gallery"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="3"/><circle cx="9" cy="10" r="1.5"/><path d="m6 17 4.2-4 2.8 2.5 2.4-2 2.6 3.5"/></svg><span data-i18n="nav_products">Products Gallery</span></a>
+          </div>
+        </div>
+
+        <!-- 合并：关于我们（下拉子菜单：工厂实力、展厅风采） -->
+        <div class="nav-item">
+          <a class="nav-group-parent" href="#capability"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 10.5V17M12 7.2v.2"/></svg><span data-i18n="nav_about">About Us</span></a>
+          <div class="dropdown-menu">
+            <a href="#capability"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m14.8 6.2 3-3 3 3-3 3M13.5 7.5 5 16l3 3 8.5-8.5"/><path d="m4 20 3.5-.8L4.8 16.5z"/></svg><span data-i18n="nav_capability">Capability</span></a>
+            <a href="#showroom"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16v11H4zM3 9l2-5h14l2 5"/><path d="M8 20v-6h8v6M7 9v2M12 9v2M17 9v2"/></svg><span data-i18n="nav_showroom">Showroom</span></a>
+          </div>
+        </div>
+
+        <a href="#contact"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="3"/><path d="m5 7 7 6 7-6"/></svg><span data-i18n="nav_contact">Contact</span></a>
+      </nav>
+
+      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <button class="lang-switch-standalone" id="lang-toggle" type="button" aria-label="Switch language: English, Simplified Chinese, Traditional Chinese">
+      <div class="lang-track">
+        <span class="lang-label label-en active" data-lang="en">EN</span>
+        <span class="lang-label label-zht" data-lang="zht">繁</span>
+        <span class="lang-label label-zh" data-lang="zh">简</span>
+        <div class="lang-knob" aria-hidden="true"></div>
+      </div>
+    </button>
+    <div class="music-player" id="music-player" role="group" data-i18n-aria-label="music_player" aria-label="Background soundtrack">
+      <button class="music-toggle" id="music-toggle" type="button" aria-expanded="false" aria-pressed="false" aria-label="Play background music">
+        <span class="music-orb" aria-hidden="true">
+          <svg class="music-note" viewBox="0 0 24 24"><path d="M9 17.5V6.8l9-2.2v10.7M9 10l9-2.2"/><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="15.5" cy="15.3" r="2.5"/></svg>
+          <span class="music-bars"><i></i><i></i><i></i></span>
+          <svg class="music-play-icon" viewBox="0 0 24 24"><path d="m9 6 9 6-9 6z"/></svg>
+          <svg class="music-pause-icon" viewBox="0 0 24 24"><path d="M9 7v10M15 7v10"/></svg>
+        </span>
+      </button>
+      <div class="music-details">
+        <span class="music-copy"><small data-i18n="music_label">Soundtrack</small><strong id="music-title">Rhapsody in Blue</strong></span>
+        <button class="music-pause" id="music-pause" type="button" aria-pressed="false" aria-label="Pause background music">
+          <svg class="music-detail-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 9 6-9 6z"/></svg>
+          <svg class="music-detail-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7v10M15 7v10"/></svg>
+        </button>
+        <button class="music-next" id="music-next" type="button" data-i18n-aria-label="music_next" aria-label="Next track">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 6 8 6-8 6z"/><path d="M17 6v12"/></svg>
+        </button>
+      </div>
+      <span class="music-status" id="music-status" role="status" aria-live="polite">Music paused</span>
+      <audio id="background-music" preload="none"></audio>
+    </div>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero_eyebrow">Quanzhou, China · Since 1998</p>
+          <h1 data-i18n="hero_title">Seasonal gifts shaped for global retail.</h1>
+          <p class="hero-lede" data-i18n="hero_lede">
+            LANDY designs and manufactures resin, ceramic, fabric and metal decorative products for
+            Christmas, Halloween, Easter, garden, coastal and home decor programs.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action icon-action" href="#product-gallery">
+              <svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1.6"/><rect x="14" y="4" width="6" height="6" rx="1.6"/><rect x="4" y="14" width="6" height="6" rx="1.6"/><rect x="14" y="14" width="6" height="6" rx="1.6"/></svg>
+              <span data-i18n="hero_btn_explore">Browse Product Gallery</span>
+            </a>
+            <a class="ghost-action icon-action" href="#collections">
+              <svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3M5.9 5.9 8 8M16 16l2.1 2.1M18.1 5.9 16 8M8 16l-2.1 2.1"/><circle cx="12" cy="12" r="3.25"/></svg>
+              <span data-i18n="hero_btn_inquiry">Explore Seasonal Stories</span>
+            </a>
+          </div>
+          <ul class="hero-proof" aria-label="LANDY production highlights">
+            <li><strong>1998</strong><span data-i18n="hero_proof_experience">founded in Quanzhou</span></li>
+            <li><strong>2,000+</strong><span data-i18n="hero_proof_new">new items every season</span></li>
+            <li><strong data-i18n="hero_proof_one_value">1-stop</strong><span data-i18n="hero_proof_service">design, sampling and production</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-stage reveal" data-glass>
+          <img src="assets/images/hero-christmas-sleigh.webp" width="2200" height="1468" loading="eager" decoding="async" fetchpriority="high" alt="LANDY Christmas sleigh craft display" />
+          <div class="floating-panel panel-top" data-lens>
+            <span data-i18n="hero_panel_top_title">New items / season</span>
+            <strong>2000+</strong>
+          </div>
+          <div class="floating-panel panel-bottom" data-lens>
+            <span data-i18n="hero_panel_bottom_title">Materials</span>
+            <strong data-i18n="hero_panel_bottom_val">Resin · Ceramic · Fabric · Metal</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band">
+        <div class="intro-copy reveal">
+          <p class="eyebrow" data-i18n="intro_eyebrow">Design-driven export partner</p>
+          <h2 data-i18n="intro_title">From market trend research to dependable delivery.</h2>
+        </div>
+        <!-- Lorolabs 风格极其细腻无跳跃感的数字递增卡片 -->
+        <div class="metric-grid reveal">
+          <article data-glass data-lens>
+            <strong><span class="counter-num" data-target="1998">0</span></strong>
+            <span data-i18n="metric_1_sub">Years in gifts and crafts</span>
+          </article>
+          <article data-glass data-lens>
+            <strong><span class="counter-num" data-target="6000">0</span><span class="unit-symbol">m²</span></strong>
+            <span data-i18n="metric_2_sub">Factory footprint</span>
+          </article>
+          <article data-glass data-lens>
+            <strong><span class="counter-num" data-target="150">0</span><span class="unit-symbol">+</span></strong>
+            <span data-i18n="metric_3_sub">Production team members</span>
+          </article>
+          <article data-glass data-lens>
+            <strong><span class="counter-num" data-target="20">0</span><span class="unit-symbol">+</span></strong>
+            <span data-i18n="metric_4_sub">Years of design expertise</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="collections section-shell" id="collections">
+        <div class="product-journey" id="product-journey">
+          <header class="journey-intro">
+            <p class="eyebrow"><span class="journey-en">Product architecture</span><span class="journey-zh">产品体系</span></p>
+            <h2><span class="journey-en">A year of gift stories, all under one roof.</span><span class="journey-zh">一座房子，收藏一整年的节日故事。</span></h2>
+            <p><span class="journey-en">Follow LANDY’s traveling gift knot as it gathers nine seasonal inspirations—from everyday living to Christmas night.</span><span class="journey-zh">跟随 LANDY 的旅行礼结，收集九份四季灵感，从日常家居一路抵达圣诞之夜。</span></p>
+            <div class="journey-intro-actions">
+              <a class="journey-skip" href="#product-gallery" data-i18n="journey_skip">Skip to the searchable showroom ↘</a>
+            </div>
+          </header>
+
+          <div class="journey-scroll-space">
+            <div class="journey-stage">
+              <div class="journey-copy" aria-live="polite">
+                <div class="journey-story-heading">
+                  <div class="journey-kicker"><span class="journey-en">The seasonal trail</span><span class="journey-zh">全年节日旅程</span></div>
+                  <span class="journey-month" id="journey-month">Everyday · All year</span>
+                  <h3 class="journey-title" id="journey-title">Home Decor</h3>
+                </div>
+                <div class="journey-story-detail">
+                  <p class="journey-desc" id="journey-desc">The home is our continuous stage—shelves, tables and windowsills ready to change with every season.</p>
+                </div>
+                <div class="journey-story-actions">
+                  <div class="journey-tags" id="journey-tags"><span>Resin</span><span>Ceramic</span><span>Fabric</span><span>Metal</span></div>
+                  <button class="journey-explore" id="journey-explore" type="button">Explore this collection <span aria-hidden="true">↘</span></button>
+                </div>
+              </div>
+
+              <div class="journey-panorama" id="journey-panorama" aria-hidden="true">
+                <div class="journey-panorama-track" id="journey-panorama-track">
+                  <figure class="journey-panel journey-panel-interactive journey-panel-home" data-interactive-scene="home" data-journey-index="0">
+                    <img class="journey-depth-layer journey-depth-sky" data-src="journey-interactive/home/background-layers/empty-room-backstop-v2.webp?v=20260810d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer home-depth-rear-cabinets" data-src="journey-interactive/home/furniture-v3/rear-cabinets-v3.webp?v=20260810d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer home-depth-sofa-left" data-src="journey-interactive/home/furniture-v3/sofa-left-cabinet-v3.webp?v=20260810d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-road home-depth-road" data-src="journey-interactive/home/background-layers/road-band-v3.webp?v=20260810d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer home-depth-road-front" data-src="journey-interactive/home/background-layers/road-front-v3.webp?v=20260810d" alt="" loading="lazy" />
+                    <div class="journey-product-hotspots" id="home-product-hotspots"></div>
+                    <svg class="journey-panel-route" viewBox="0 0 1000 562.8" preserveAspectRatio="xMidYMid slice">
+                      <path class="panorama-route-base" d="M 45 490 C 230 487 438 472 610 467 C 760 462 840 476 875 515 C 894 536 900 552 900 562.8" />
+                      <path class="panorama-route-progress journey-panel-path" d="M 45 490 C 230 487 438 472 610 467 C 760 462 840 476 875 515 C 894 536 900 552 900 562.8" />
+                    </svg>
+                  </figure>
+                  <figure class="journey-panel journey-panel-interactive journey-panel-valentine" data-interactive-scene="valentine" data-journey-index="1">
+                    <img class="journey-depth-layer journey-depth-sky" data-src="journey-interactive/valentine/background-layers/base-backdrop.webp?v=20260804j" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-rear-main valentine-depth-upper-table" data-src="journey-interactive/valentine/background-layers/upper-table.webp?v=20260804j" alt="" loading="lazy" />
+                    <img class="journey-depth-layer valentine-depth-upper-lip" data-src="journey-interactive/valentine/background-layers/upper-table-lip.webp?v=20260804j" alt="" loading="lazy" />
+                    <img class="journey-depth-layer valentine-depth-road-shadow" data-src="journey-interactive/valentine/background-layers/road-shadow.webp?v=20260804j" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-road valentine-depth-road" data-src="journey-interactive/valentine/background-layers/road-band.webp?v=20260804j" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-front-near-guard valentine-depth-lower-table" data-src="journey-interactive/valentine/background-layers/lower-table.webp?v=20260804j" alt="" loading="lazy" />
+                    <img class="journey-depth-layer valentine-depth-lower-lip" data-src="journey-interactive/valentine/background-layers/lower-table-lip.webp?v=20260804j" alt="" loading="lazy" />
+                    <div class="journey-product-hotspots" id="valentine-product-hotspots"></div>
+                    <svg class="journey-panel-route" viewBox="0 0 1000 562.8" preserveAspectRatio="xMidYMid slice">
+                      <path class="panorama-route-base" d="M 900 0 C 900 112 895 224 832 294 C 757 368 570 394 382 419 C 228 439 150 490 145 562.8" />
+                      <path class="panorama-route-progress journey-panel-path" d="M 900 0 C 900 112 895 224 832 294 C 757 368 570 394 382 419 C 228 439 150 490 145 562.8" />
+                    </svg>
+                  </figure>
+                  <figure class="journey-panel journey-panel-interactive" data-interactive-scene="easter" data-journey-index="2">
+                    <img class="journey-depth-layer journey-depth-sky" data-src="journey-interactive/easter/background-layers/sky-base.webp?v=20260804" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-rear-backstop" data-src="journey-interactive/easter/background-layers/landscape-rear.webp?v=20260804" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-rear-far" data-src="journey-interactive/easter/background-layers/landscape-rear-far-bleed-soft.webp?v=20260804c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-rear-main" data-src="journey-interactive/easter/background-layers/landscape-rear-main-bleed-soft.webp?v=20260804c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-road-bridge" data-src="journey-interactive/easter/background-layers/road-shoulder-bridge.webp?v=20260804e" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-road" data-src="journey-interactive/easter/background-layers/road-complete-clean.webp?v=20260804e" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-front-mid-guard" data-src="journey-interactive/easter/background-layers/landscape-front-mid-clean.webp?v=20260804d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-front-mid" data-src="journey-interactive/easter/background-layers/landscape-front-mid-clean.webp?v=20260804d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-front-near-guard" data-src="journey-interactive/easter/background-layers/landscape-front-near-clean.webp?v=20260804d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-front-near" data-src="journey-interactive/easter/background-layers/landscape-front-near-clean.webp?v=20260804d" alt="" loading="lazy" />
+                    <div class="journey-product-hotspots" id="easter-product-hotspots"></div>
+                    <svg class="journey-panel-route" viewBox="0 0 1000 562.8" preserveAspectRatio="xMidYMid slice">
+                      <path class="panorama-route-base" d="M 145 0 C 145 116 212 180 314 235 C 440 306 602 334 729 386 C 832 428 875 482 875 580.8" />
+                      <path class="panorama-route-progress journey-panel-path" d="M 145 0 C 145 116 212 180 314 235 C 440 306 602 334 729 386 C 832 428 875 482 875 580.8" />
+                    </svg>
+                  </figure>
+                  <figure class="journey-panel journey-panel-interactive journey-panel-garden" data-interactive-scene="garden" data-journey-index="3">
+                    <img class="journey-depth-layer garden-depth-safety" data-src="journey-interactive/garden/background-layers-v5/clean-backstop-v5.webp?v=20260811h" alt="" loading="lazy" />
+                    <img class="journey-depth-layer garden-depth-back" data-src="journey-interactive/garden/background-layers-v5/road-back-v5.webp?v=20260811h" alt="" loading="lazy" />
+                    <img class="journey-depth-layer journey-depth-road garden-depth-road" data-src="journey-interactive/garden/background-layers-v5/road-band-v5.webp?v=20260811h" alt="" loading="lazy" />
+                    <img class="journey-depth-layer garden-depth-front-mid" data-src="journey-interactive/garden/background-layers-v5/road-front-mid-v6.webp?v=20260811h" alt="" loading="lazy" />
+                    <img class="journey-depth-layer garden-depth-front-near" data-src="journey-interactive/garden/background-layers-v5/road-front-near-v6.webp?v=20260811h" alt="" loading="lazy" />
+                    <div class="journey-product-hotspots" id="garden-product-hotspots"></div>
+                    <svg class="journey-panel-route" viewBox="0 0 1000 562.8" preserveAspectRatio="xMidYMid slice">
+                      <path class="panorama-route-base" d="M 875 0 C 875 102 820 189 721 251 C 617 316 493 321 388 356 C 286 390 240 468 240 562.8" />
+                      <path class="panorama-route-progress journey-panel-path" d="M 875 0 C 875 102 820 189 721 251 C 617 316 493 321 388 356 C 286 390 240 468 240 562.8" />
+                    </svg>
+                  </figure>
+                  <figure class="journey-panel journey-panel-interactive journey-panel-coastline" data-interactive-scene="coastline" data-journey-index="4">
+                    <img class="journey-depth-layer coastline-depth-backstop" data-src="journey-interactive/coastline/background-layers-v2/clean-safety-backstop.webp?v=20260812b" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-wave-left" data-src="journey-interactive/coastline/background-layers-v2/wave-left.webp?v=20260812r" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-wave-right" data-src="journey-interactive/coastline/background-layers-v2/wave-right.webp?v=20260812r" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-sky" data-src="journey-interactive/coastline/background-layers-v2/sky.webp?v=20260812r" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-dune-e" data-src="journey-interactive/coastline/background-layers-v2/dune-e.webp?v=20260812r" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-dune-c" data-src="journey-interactive/coastline/background-layers-v2/dune-c.webp?v=20260812r" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-dune-d" data-src="journey-interactive/coastline/background-layers-v2/dune-d.webp?v=20260812r" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-road" data-src="journey-interactive/coastline/background-layers-v2/road.webp?v=20260812r" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-lighthouse-mound" data-src="journey-interactive/coastline/background-layers-v2/lighthouse-foot-mound.webp?v=20260812c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-dune-b" data-src="journey-interactive/coastline/background-layers-v2/dune-b.webp?v=20260812r" alt="" loading="lazy" />
+                    <img class="journey-depth-layer coastline-depth-dune-a" data-src="journey-interactive/coastline/background-layers-v2/dune-a.webp?v=20260812r" alt="" loading="lazy" />
+                    <div class="journey-product-hotspots" id="coastline-product-hotspots"></div>
+                    <svg class="journey-panel-route" viewBox="0 0 1000 562.8" preserveAspectRatio="xMidYMid slice">
+                      <path class="panorama-route-base" d="M 240 0 C 240 120 245 194 319 230 C 411 275 534 267 645 318 C 766 374 822 463 840 562.8" />
+                      <path class="panorama-route-progress journey-panel-path" d="M 240 0 C 240 120 245 194 319 230 C 411 275 534 267 645 318 C 766 374 822 463 840 562.8" />
+                    </svg>
+                  </figure>
+                  <figure class="journey-panel journey-panel-interactive journey-panel-farmhouse" data-interactive-scene="farmhouse" data-journey-index="5">
+                    <img class="journey-depth-layer farmhouse-depth-safety" data-src="journey-interactive/farmhouse/background-layers-v2/00-safety-no-road-no-fences.webp?v=20260813b" alt="" loading="lazy" />
+                    <img class="journey-depth-layer farmhouse-depth-background" data-src="journey-interactive/farmhouse/background-layers-v2/05-sky.webp?v=20260813d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer farmhouse-depth-field" data-src="journey-interactive/farmhouse/background-layers-v2/04-farmland.webp?v=20260813d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer farmhouse-depth-hills" data-src="journey-interactive/farmhouse/background-layers-v2/03-road-rear-hill-fences.webp?v=20260813d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer farmhouse-depth-road" data-src="journey-interactive/farmhouse/background-layers-v2/02-road.webp?v=20260813d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer farmhouse-depth-foreground" data-src="journey-interactive/farmhouse/background-layers-v2/01-road-front-land-fences.webp?v=20260813d" alt="" loading="lazy" />
+                    <div class="journey-product-hotspots" id="farmhouse-product-hotspots"></div>
+                    <svg class="journey-panel-route" viewBox="0 0 1000 562.8" preserveAspectRatio="xMidYMid slice">
+                      <path class="panorama-route-base" d="M 840 0 C 840 107 821 196 745 255 C 658 322 516 326 397 365 C 288 401 235 474 235 562.8" />
+                      <path class="panorama-route-progress journey-panel-path" d="M 840 0 C 840 107 821 196 745 255 C 658 322 516 326 397 365 C 288 401 235 474 235 562.8" />
+                    </svg>
+                  </figure>
+                  <figure class="journey-panel journey-panel-interactive journey-panel-halloween" data-interactive-scene="halloween" data-journey-index="6">
+                    <img class="journey-depth-layer halloween-depth-safety" data-src="journey-interactive/halloween/background-layers-v2/00-sky-backstop.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-rear" data-src="journey-interactive/halloween/background-layers-v2/04-far-hill.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-rear halloween-decor-upper-trees" data-src="journey-interactive/halloween/decor-v2/distant-trees-upper.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-purple" data-src="journey-interactive/halloween/background-layers-v2/03-purple-hill.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-purple halloween-decor-right-trees" data-src="journey-interactive/halloween/decor-v2/distant-trees-right.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-purple halloween-decor-moon" data-src="journey-interactive/halloween/decor-v2/moon-original.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-green" data-src="journey-interactive/halloween/background-layers-v2/02-green-hill.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-foreground" data-src="journey-interactive/halloween/background-layers-v2/01-foreground-hill.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-road" data-src="journey-interactive/halloween/background-layers-v2/05-cream-road.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-rear-shelves" data-src="journey-interactive/halloween/decor-v2/branch-left-original.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-rear-shelves" data-src="journey-interactive/halloween/decor-v2/branch-right-original.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-rear-shelves" data-src="journey-interactive/halloween/cabinets-v2/cabinet-centre.webp?v=20260814d" alt="" loading="lazy" />
+                    <img class="journey-depth-layer halloween-depth-front-shelves" data-src="journey-interactive/halloween/cabinets-v2/cabinet-left.webp?v=20260814d" alt="" loading="lazy" />
+                    <div class="journey-product-hotspots" id="halloween-product-hotspots"></div>
+                    <svg class="journey-panel-route" viewBox="0 0 1000 562.8" preserveAspectRatio="xMidYMid slice">
+                      <path class="panorama-route-base" d="M 235 0 C 235 18 235 35 235 48 C 235 61 241 68 258 79 C 278 92 305 108 324 125 C 343.7 141.7 330.7 154.2 347 175 C 363.3 195.8 393.3 220.8 422 250 C 450.7 279.2 474.8 320.8 519 350 C 563.2 379.2 640.8 400 687 425 C 742 455 803 474 803 510 C 803 528 803 546 803 562.8" />
+                      <path class="panorama-route-progress journey-panel-path" d="M 235 0 C 235 18 235 35 235 48 C 235 61 241 68 258 79 C 278 92 305 108 324 125 C 343.7 141.7 330.7 154.2 347 175 C 363.3 195.8 393.3 220.8 422 250 C 450.7 279.2 474.8 320.8 519 350 C 563.2 379.2 640.8 400 687 425 C 742 455 803 474 803 510 C 803 528 803 546 803 562.8" />
+                    </svg>
+                  </figure>
+                  <figure class="journey-panel journey-panel-interactive journey-panel-thanksgiving" data-interactive-scene="thanksgiving" data-journey-index="7">
+                    <img class="journey-depth-layer thanksgiving-depth-safety" data-src="journey-interactive/thanksgiving/background-layers/00-backstop.webp?v=20260815c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer thanksgiving-depth-far" data-src="journey-interactive/thanksgiving/background-layers/01-far-hill.webp?v=20260815c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer thanksgiving-depth-rear" data-src="journey-interactive/thanksgiving/background-layers/02-rear-shrubs.webp?v=20260815c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer thanksgiving-depth-canopy" data-src="journey-interactive/thanksgiving/background-layers/03-canopy-trunk.webp?v=20260815c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer thanksgiving-depth-front-bush" data-src="journey-interactive/thanksgiving/background-layers/04-front-bush.webp?v=20260815c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer thanksgiving-depth-road" data-src="journey-interactive/thanksgiving/background-layers/05-cream-road.webp?v=20260815c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer thanksgiving-depth-table-white" data-src="journey-interactive/thanksgiving/background-layers/06-table-white.webp?v=20260815c" alt="" loading="lazy" />
+                    <img class="journey-depth-layer thanksgiving-depth-table-red" data-src="journey-interactive/thanksgiving/background-layers/07-table-red.webp?v=20260815c" alt="" loading="lazy" />
+                    <div class="journey-product-hotspots" id="thanksgiving-product-hotspots"></div>
+                    <svg class="journey-panel-route" viewBox="0 0 1000 562.8" preserveAspectRatio="xMidYMid slice">
+                      <path class="panorama-route-base" d="M 801 0 C 800 90 797 125 780 170 C 760 220 700 255 610 287 C 500 326 390 330 310 375 C 250 410 238 485 235 562.8" />
+                      <path class="panorama-route-progress journey-panel-path" d="M 801 0 C 800 90 797 125 780 170 C 760 220 700 255 610 287 C 500 326 390 330 310 375 C 250 410 238 485 235 562.8" />
+                    </svg>
+                  </figure>
+                  <figure class="journey-panel journey-panel-interactive journey-panel-christmas" data-interactive-scene="christmas" data-journey-index="8">
+                    <img class="journey-depth-layer christmas-depth-safety" data-src="journey-interactive/christmas/background-layers/00-backstop-no-front-hills.webp?v=20260816u" alt="" loading="lazy" />
+                    <img class="journey-depth-layer christmas-depth-far" data-src="journey-interactive/christmas/background-layers/02-far-ridges.webp?v=20260815a" alt="" loading="lazy" />
+                    <img class="journey-depth-layer christmas-depth-hills" data-src="journey-interactive/christmas/background-layers/01-teal-hills.webp?v=20260815a" alt="" loading="lazy" />
+                    <img class="journey-depth-layer christmas-depth-snow" data-src="journey-interactive/christmas/background-layers/03-snowfields-no-front-hills.webp?v=20260816u" alt="" loading="lazy" />
+                    <img class="journey-depth-layer christmas-depth-tree-left" data-src="journey-interactive/christmas/background-layers/04-tree-left.webp?v=20260815a" alt="" loading="lazy" />
+                    <img class="journey-depth-layer christmas-depth-tree-centre" data-src="journey-interactive/christmas/background-layers/05-tree-centre.webp?v=20260815a" alt="" loading="lazy" />
+                    <img class="journey-depth-layer christmas-depth-tree-right" data-src="journey-interactive/christmas/background-layers/06-tree-right.webp?v=20260815a" alt="" loading="lazy" />
+                    <img class="journey-depth-layer christmas-depth-road" data-src="journey-interactive/christmas/background-layers/07-cream-road-v3-extended.webp?v=20260816t" alt="" loading="lazy" />
+                    <img class="journey-depth-layer christmas-depth-tree-decorated-left" data-src="journey-interactive/christmas/background-layers/08-tree-decorated-left-clean.webp?v=20260816k" alt="" loading="lazy" />
+                    <div class="journey-product-hotspots" id="christmas-product-hotspots"></div>
+                    <svg class="journey-panel-route" viewBox="0 0 1000 562.8" preserveAspectRatio="xMidYMid slice">
+                      <path class="panorama-route-base" d="M 242 0 C 242 100 284 163 375 211 C 480 266 582 273 663 329 C 716 366 752 397 756 438 C 760 470 783 488 821 490 C 870 492 923 490 977 490" />
+                      <path class="panorama-route-progress journey-panel-path" d="M 242 0 C 242 100 284 163 375 211 C 480 266 582 273 663 329 C 716 366 752 397 756 438 C 760 470 783 488 821 490 C 870 492 923 490 977 490" />
+                    </svg>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="journey-voyager" id="journey-voyager" aria-hidden="true">
+                <div class="voyager-facing" id="voyager-facing">
+                  <span class="voyager-aura"></span>
+                  <span class="voyager-emblem">
+                    <img src="assets/brand/landy-gift-mark-original.svg?v=20260818s" alt="" />
+                  </span>
+                </div>
+              </div>
+
+              <div class="journey-scene-curtain" aria-hidden="true"></div>
+
+              <div class="journey-visual" aria-hidden="true">
+                <img class="journey-map" id="journey-map" alt="" />
+                <figure class="journey-scene scene-home active" data-scene="0">
+                  <div class="storybook-room">
+                    <span class="scene-window window-day"><i></i></span><span class="scene-shelf shelf-a"></span><span class="scene-shelf shelf-b"></span>
+                    <span class="prop prop-vase"><i></i></span><span class="prop prop-candle"></span><span class="prop prop-frame"></span>
+                    <span class="scene-rug"></span><span class="scene-lamp"></span><span class="fx fx-spark s1">✦</span><span class="fx fx-spark s2">✦</span>
+                  </div>
+                </figure>
+                <figure class="journey-scene scene-valentine" data-scene="1">
+                  <div class="storybook-room">
+                    <span class="scene-window window-pink"><i></i></span><span class="scene-sofa"></span><span class="scene-table round-table"></span>
+                    <span class="prop prop-heart h1"></span><span class="prop prop-heart h2"></span><span class="prop prop-heart h3"></span>
+                    <span class="prop prop-gift gift-a"></span><span class="prop prop-gift gift-b"></span><span class="fx ribbon-loop"></span>
+                  </div>
+                </figure>
+                <figure class="journey-scene scene-easter" data-scene="2">
+                  <div class="storybook-room garden-room">
+                    <span class="scene-arch"></span><span class="scene-hill hill-a"></span><span class="scene-hill hill-b"></span>
+                    <span class="prop prop-egg egg-a"></span><span class="prop prop-egg egg-b"></span><span class="prop prop-egg egg-c"></span>
+                    <span class="prop prop-rabbit"><i></i></span><span class="prop prop-clover c1">♣</span><span class="prop prop-clover c2">♣</span>
+                    <span class="fx fx-butterfly">◆</span>
+                  </div>
+                </figure>
+                <figure class="journey-scene scene-garden" data-scene="3">
+                  <div class="storybook-room garden-room">
+                    <span class="scene-sun"></span><span class="scene-cloud cloud-a"></span><span class="scene-cloud cloud-b"></span>
+                    <span class="prop prop-pot pot-a"><i></i></span><span class="prop prop-pot pot-b"><i></i></span><span class="prop prop-flower f1"></span><span class="prop prop-flower f2"></span>
+                    <span class="prop prop-frog"><i></i></span><span class="prop prop-watering"></span>
+                  </div>
+                </figure>
+                <figure class="journey-scene scene-coast" data-scene="4">
+                  <div class="storybook-room coast-room">
+                    <span class="scene-sun"></span><span class="scene-cloud cloud-a"></span><span class="scene-wave wave-a"></span><span class="scene-wave wave-b"></span>
+                    <span class="prop prop-lighthouse"><i></i></span><span class="prop prop-boat"></span><span class="prop prop-shell shell-a"></span><span class="prop prop-star">★</span>
+                    <span class="fx fx-gull g1">⌁</span><span class="fx fx-gull g2">⌁</span>
+                  </div>
+                </figure>
+                <figure class="journey-scene scene-farm" data-scene="5">
+                  <div class="storybook-room farm-room">
+                    <span class="scene-sun sunset"></span><span class="scene-hill hill-a"></span><span class="scene-barn"><i></i></span><span class="scene-fence"></span>
+                    <span class="prop prop-windmill"><i></i></span><span class="prop prop-hay hay-a"></span><span class="prop prop-hay hay-b"></span>
+                    <span class="fx fx-leaf l1">◆</span><span class="fx fx-leaf l2">◆</span><span class="fx fx-leaf l3">◆</span>
+                  </div>
+                </figure>
+                <figure class="journey-scene scene-halloween" data-scene="6">
+                  <div class="storybook-room attic-room">
+                    <span class="scene-moon"></span><span class="scene-window window-night"><i></i></span><span class="scene-stairs"></span>
+                    <span class="prop prop-pumpkin p1"><i></i></span><span class="prop prop-pumpkin p2"><i></i></span><span class="prop prop-candle candle-dark"></span>
+                    <span class="fx fx-bat b1">◆</span><span class="fx fx-bat b2">◆</span><span class="fx fx-ghost"><i></i></span>
+                  </div>
+                </figure>
+                <figure class="journey-scene scene-thanks" data-scene="7">
+                  <div class="storybook-room dining-room">
+                    <span class="scene-window window-gold"><i></i></span><span class="scene-table feast-table"></span><span class="scene-chair chair-a"></span><span class="scene-chair chair-b"></span>
+                    <span class="prop prop-pumpkin p3"><i></i></span><span class="prop prop-cornucopia"></span><span class="prop prop-candle candle-a"></span><span class="prop prop-candle candle-b"></span>
+                    <span class="fx fx-leaf l1">◆</span><span class="fx fx-leaf l2">◆</span>
+                  </div>
+                </figure>
+                <figure class="journey-scene scene-christmas" data-scene="8">
+                  <div class="storybook-room christmas-room">
+                    <span class="scene-window window-snow"><i></i></span><span class="scene-fireplace"><i></i></span><span class="scene-tree"><i></i></span>
+                    <span class="prop prop-gift gift-c"></span><span class="prop prop-gift gift-d"></span><span class="prop prop-angel"><i></i></span>
+                    <span class="fx fx-snow n1">•</span><span class="fx fx-snow n2">•</span><span class="fx fx-snow n3">•</span><span class="fx fx-snow n4">•</span><span class="fx fx-star-top">✦</span>
+                  </div>
+                </figure>
+
+                <svg class="journey-route" viewBox="0 0 848 1520" preserveAspectRatio="xMidYMid meet">
+                  <path id="journey-path" class="journey-route-base" pathLength="1" d="M410 72 C570 155 590 225 470 300 S278 382 338 468 S538 545 475 642 S286 728 350 825 S560 910 470 1012 S288 1086 352 1184 S540 1282 450 1382 S352 1442 390 1480" />
+                  <path class="journey-route-progress" pathLength="1" d="M410 72 C570 155 590 225 470 300 S278 382 338 468 S538 545 475 642 S286 728 350 825 S560 910 470 1012 S288 1086 352 1184 S540 1282 450 1382 S352 1442 390 1480" />
+                  <g class="journey-stops">
+                    <circle cx="410" cy="72" r="12" class="active"/><circle cx="512" cy="238" r="12"/><circle cx="338" cy="468" r="12"/>
+                    <circle cx="475" cy="642" r="12"/><circle cx="350" cy="825" r="12"/><circle cx="470" cy="1012" r="12"/>
+                    <circle cx="352" cy="1184" r="12"/><circle cx="450" cy="1382" r="12"/><circle cx="390" cy="1480" r="12"/>
+                  </g>
+                </svg>
+                <div class="journey-traveler" id="journey-traveler">
+                  <i class="chase-cat"><b class="spin-feet"></b></i>
+                  <i class="chase-mouse"><b class="spin-feet"></b></i>
+                </div>
+                <div class="journey-atmosphere">
+                  <span class="map-fx fx-heart">♥</span>
+                  <span class="map-fx fx-bloom">✦</span>
+                  <span class="map-fx fx-wave">⌁</span>
+                  <span class="map-fx fx-harvest">◆</span>
+                  <span class="map-fx fx-pumpkin">●</span>
+                  <span class="map-fx fx-snow-one">✦</span>
+                  <span class="map-fx fx-snow-two">•</span>
+                  <span class="map-fx fx-snow-three">✦</span>
+                </div>
+                <span class="journey-decor decor-star">✦</span>
+                <span class="journey-decor decor-leaf"></span>
+              </div>
+              <div class="journey-progress-label" aria-label="Seasonal journey progress">
+                <span class="journey-progress-number"><strong id="journey-step">01</strong><span>/09</span></span>
+                <div class="journey-progress-track" role="navigation" aria-label="Jump to a seasonal story">
+                  <button type="button" style="--i:0" data-journey-index="0" class="active complete" aria-label="Home Decor" aria-current="step"></button>
+                  <button type="button" style="--i:1" data-journey-index="1" aria-label="Valentine's Day"></button>
+                  <button type="button" style="--i:2" data-journey-index="2" aria-label="Irish and Easter"></button>
+                  <button type="button" style="--i:3" data-journey-index="3" aria-label="Garden"></button>
+                  <button type="button" style="--i:4" data-journey-index="4" aria-label="Coastline and Americana"></button>
+                  <button type="button" style="--i:5" data-journey-index="5" aria-label="Farmhouse and Gifts"></button>
+                  <button type="button" style="--i:6" data-journey-index="6" aria-label="Halloween"></button>
+                  <button type="button" style="--i:7" data-journey-index="7" aria-label="Thanksgiving"></button>
+                  <button type="button" style="--i:8" data-journey-index="8" aria-label="Angel and Christmas"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="journey-outro">
+            <div class="journey-scroll-cue">
+              <p>
+                <span class="journey-en">Nine seasonal stories are only the beginning. Continue down to explore the complete searchable showroom.</span>
+                <span class="journey-zh">九个节日故事只是开始，继续向下浏览完整的可检索在线展厅。</span>
+              </p>
+              <span class="journey-cue-arrow" aria-hidden="true"></span>
+            </div>
+          </footer>
+        </div>
+
+        <section class="mobile-journey" id="mobile-journey" aria-labelledby="mobile-journey-title">
+          <header class="mobile-journey-intro">
+            <p class="eyebrow"><span class="journey-en">The seasonal trail</span><span class="journey-zh">全年节日旅程</span></p>
+            <h2 id="mobile-journey-title"><span class="journey-en">Nine stories, one flowing year.</span><span class="journey-zh">九段故事，连成流动的一年。</span></h2>
+            <p><span class="journey-en">Scroll naturally through LANDY’s seasonal worlds, then open any collection that catches your eye.</span><span class="journey-zh">顺着画卷自然浏览 LANDY 的四季世界，遇见喜欢的主题即可进入对应产品系列。</span></p>
+            <span class="mobile-journey-scroll-hint" aria-hidden="true"><i></i></span>
+          </header>
+
+          <ol class="mobile-journey-list">
+            <li class="mobile-journey-scene" style="--scene-accent:#b98262">
+              <img data-src="assets/journey/01-home.webp" alt="Paper-art home decor scene" width="1672" height="941" loading="lazy" decoding="async" />
+              <div class="mobile-journey-caption"><span class="mobile-journey-number">01 <small>/ 09</small></span><div><p><span class="journey-en">Everyday · All year</span><span class="journey-zh">全年 · 日常家居</span></p><h3><span class="journey-en">Home Decor</span><span class="journey-zh">家居饰品</span></h3></div><a href="#product-gallery" data-gallery-filter="Home Decor"><span data-i18n="journey_gallery_cta">View products from this story</span><i aria-hidden="true">↘</i></a></div>
+            </li>
+            <li class="mobile-journey-scene" style="--scene-accent:#b95f6b">
+              <img data-src="assets/journey/02-valentine.webp" alt="Paper-art Valentine scene" width="1672" height="941" loading="lazy" decoding="async" />
+              <div class="mobile-journey-caption"><span class="mobile-journey-number">02 <small>/ 09</small></span><div><p><span class="journey-en">February · First heartbeat</span><span class="journey-zh">二月 · 第一颗心</span></p><h3><span class="journey-en">Valentine’s Day</span><span class="journey-zh">情人节</span></h3></div><a href="#product-gallery" data-gallery-filter="VALENTINE'S DAY"><span data-i18n="journey_gallery_cta">View products from this story</span><i aria-hidden="true">↘</i></a></div>
+            </li>
+            <li class="mobile-journey-scene" style="--scene-accent:#80916b">
+              <img data-src="assets/journey/03-easter.webp" alt="Paper-art Easter and spring scene" width="1672" height="941" loading="lazy" decoding="async" />
+              <div class="mobile-journey-caption"><span class="mobile-journey-number">03 <small>/ 09</small></span><div><p><span class="journey-en">March—April · New beginnings</span><span class="journey-zh">三月至四月 · 万物新生</span></p><h3><span class="journey-en">Easter &amp; Spring Gifts</span><span class="journey-zh">复活节与春日礼品</span></h3></div><a href="#product-gallery" data-gallery-filter="EASTER"><span data-i18n="journey_gallery_cta">View products from this story</span><i aria-hidden="true">↘</i></a></div>
+            </li>
+            <li class="mobile-journey-scene" style="--scene-accent:#6f937a">
+              <img data-src="assets/journey/04-garden.webp" alt="Paper-art garden scene" width="1672" height="941" loading="lazy" decoding="async" />
+              <div class="mobile-journey-caption"><span class="mobile-journey-number">04 <small>/ 09</small></span><div><p><span class="journey-en">May · Into the garden</span><span class="journey-zh">五月 · 走进花园</span></p><h3><span class="journey-en">Garden</span><span class="journey-zh">花园</span></h3></div><a href="#product-gallery" data-gallery-filter="GARDEN"><span data-i18n="journey_gallery_cta">View products from this story</span><i aria-hidden="true">↘</i></a></div>
+            </li>
+            <li class="mobile-journey-scene" style="--scene-accent:#587b9c">
+              <img data-src="assets/journey/05-coastline.webp" alt="Paper-art coastline scene" width="1672" height="941" loading="lazy" decoding="async" />
+              <div class="mobile-journey-caption"><span class="mobile-journey-number">05 <small>/ 09</small></span><div><p><span class="journey-en">June—July · Bright days</span><span class="journey-zh">六月至七月 · 明亮夏日</span></p><h3><span class="journey-en">Coastline &amp; Americana</span><span class="journey-zh">海洋与美式夏日</span></h3></div><a href="#product-gallery" data-gallery-filter="COASTLINE"><span data-i18n="journey_gallery_cta">View products from this story</span><i aria-hidden="true">↘</i></a></div>
+            </li>
+            <li class="mobile-journey-scene" style="--scene-accent:#8e735a">
+              <img data-src="assets/journey/06-farmhouse.webp" alt="Paper-art farmhouse scene" width="1672" height="941" loading="lazy" decoding="async" />
+              <div class="mobile-journey-caption"><span class="mobile-journey-number">06 <small>/ 09</small></span><div><p><span class="journey-en">August—September · Harvest home</span><span class="journey-zh">八月至九月 · 丰收之家</span></p><h3><span class="journey-en">Farmhouse &amp; Gifts</span><span class="journey-zh">农场与四季礼品</span></h3></div><a href="#product-gallery" data-gallery-filter="FARMHOUSE"><span data-i18n="journey_gallery_cta">View products from this story</span><i aria-hidden="true">↘</i></a></div>
+            </li>
+            <li class="mobile-journey-scene is-dark" style="--scene-accent:#76546f">
+              <img data-src="assets/journey/07-halloween.webp" alt="Paper-art Halloween scene" width="1672" height="941" loading="lazy" decoding="async" />
+              <div class="mobile-journey-caption"><span class="mobile-journey-number">07 <small>/ 09</small></span><div><p><span class="journey-en">October · A little mischief</span><span class="journey-zh">十月 · 一点小恶作剧</span></p><h3><span class="journey-en">Halloween</span><span class="journey-zh">万圣节</span></h3></div><a href="#product-gallery" data-gallery-filter="HALLOWEN"><span data-i18n="journey_gallery_cta">View products from this story</span><i aria-hidden="true">↘</i></a></div>
+            </li>
+            <li class="mobile-journey-scene" style="--scene-accent:#ad653f">
+              <img data-src="assets/journey/08-thanksgiving.webp" alt="Paper-art Thanksgiving scene" width="1672" height="941" loading="lazy" decoding="async" />
+              <div class="mobile-journey-caption"><span class="mobile-journey-number">08 <small>/ 09</small></span><div><p><span class="journey-en">November · Gather together</span><span class="journey-zh">十一月 · 欢聚时刻</span></p><h3><span class="journey-en">Thanksgiving</span><span class="journey-zh">感恩节</span></h3></div><a href="#product-gallery" data-gallery-filter="THANKSGIVING"><span data-i18n="journey_gallery_cta">View products from this story</span><i aria-hidden="true">↘</i></a></div>
+            </li>
+            <li class="mobile-journey-scene" style="--scene-accent:#39756e">
+              <img data-src="assets/journey/09-christmas.webp" alt="Paper-art Christmas scene" width="1672" height="941" loading="lazy" decoding="async" />
+              <div class="mobile-journey-caption"><span class="mobile-journey-number">09 <small>/ 09</small></span><div><p><span class="journey-en">December · The grand finale</span><span class="journey-zh">十二月 · 盛大终章</span></p><h3><span class="journey-en">Angel &amp; Christmas</span><span class="journey-zh">天使与圣诞节</span></h3></div><a href="#product-gallery" data-gallery-filter="CHRISTMAS"><span data-i18n="journey_gallery_cta">View products from this story</span><i aria-hidden="true">↘</i></a></div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="product-gallery" id="product-gallery" data-glass>
+          <div class="gallery-head">
+            <div>
+              <p class="eyebrow" data-i18n="gallery_eyebrow">Searchable showroom</p>
+              <h2 data-i18n="gallery_title">Browse every product by season and subcategory.</h2>
+            </div>
+            <div class="gallery-counter" data-lens>
+              <span id="gallery-count">77</span>
+              <small data-i18n="gallery_counter_label">products available</small>
+            </div>
+          </div>
+
+          <div class="gallery-mobile-sticky-stack">
+          <div class="gallery-mobile-actions">
+            <button class="filter-toggle" id="filter-toggle" type="button" aria-controls="gallery-tools" aria-expanded="false">
+              <svg class="filter-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg>
+              <span data-i18n="filter_button">Filters</span>
+              <span class="filter-toggle-count" id="active-filter-count">0</span>
+            </button>
+            <span class="mobile-result-count"><strong id="mobile-gallery-count">77</strong> <span data-i18n="mobile_results">results</span></span>
+          </div>
+
+          <div class="mobile-gallery-journey" id="mobile-gallery-journey" hidden>
+            <span class="mobile-gallery-journey-mark" aria-hidden="true">↳</span>
+            <div>
+              <small data-i18n="gallery_from_journey">Selected from the seasonal journey</small>
+              <strong id="mobile-gallery-journey-label"></strong>
+            </div>
+            <button id="mobile-gallery-journey-clear" type="button" data-i18n-aria-label="gallery_clear_journey" aria-label="Clear journey selection">×</button>
+          </div>
+          <div class="mobile-active-filters" id="mobile-active-filters" aria-live="polite"></div>
+
+          <div class="gallery-filter-dock">
+          <div class="gallery-tools" id="gallery-tools" aria-label="Product gallery filters">
+            <div class="gallery-tools-group search-field">
+              <span data-i18n="tool_search">Search</span>
+              <input id="product-search" type="search" placeholder="Name, category, season..." data-i18n-placeholder="search_placeholder" />
+            </div>
+            <div class="gallery-tools-group">
+              <span data-i18n="tool_category">Collection</span>
+              <select id="filter-category"></select>
+            </div>
+            <div class="gallery-tools-group">
+              <span data-i18n="tool_season">Season</span>
+              <select id="filter-season"></select>
+            </div>
+            <div class="gallery-tools-group">
+              <span data-i18n="tool_subcategory">Subcategory</span>
+              <select id="filter-subcategory"></select>
+            </div>
+            <button class="reset-button icon-action" id="reset-filters" type="button">
+              <svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.34 5.66"/><path d="M20 5v6h-6"/></svg>
+              <span data-i18n="tool_reset">Reset</span>
+            </button>
+            <button class="inspire-button" id="refresh-inspiration" type="button">
+              <svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h2.8c4.7 0 5.7 10 10.4 10H20"/><path d="m17 14 3 3-3 3"/><path d="M4 17h2.8c1.8 0 3-1.45 4.1-3.2M13.1 10.2C14.2 8.45 15.4 7 17.2 7H20"/><path d="m17 4 3 3-3 3"/></svg>
+              <span data-i18n="tool_inspire">Fresh mix</span>
+            </button>
+          </div>
+
+          <div class="category-strip" id="category-strip" aria-label="Quick subcategory filters">
+            <div class="chip-sliding-capsule" id="chip-capsule"></div>
+          </div>
+          </div>
+          </div>
+          <div class="gallery-results-line" aria-live="polite">
+            <strong id="gallery-current-label">All products</strong>
+            <span><b id="gallery-inline-count">77</b> <span data-i18n="gallery_matching">matching products</span></span>
+          </div>
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+          <div class="gallery-pagination" id="gallery-pagination" aria-label="Product pages">
+            <button class="page-arrow prev" id="page-prev" type="button" aria-label="Previous product page">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="page-status" id="page-status">1 / 1</span>
+            <button class="page-arrow next" id="page-next" type="button" aria-label="Next product page">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <aside class="gallery-inquiry-card" aria-labelledby="gallery-inquiry-title">
+            <span class="gallery-inquiry-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 5 29 17l12 5-12 5-5 12-5-12-12-5 12-5 5-12Z"/><path d="m37 6 1.7 4.3L43 12l-4.3 1.7L37 18l-1.7-4.3L31 12l4.3-1.7L37 6Z"/></svg>
+            </span>
+            <div class="gallery-inquiry-copy">
+              <p data-i18n="gallery_inquiry_eyebrow">New collections · Custom development</p>
+              <h3 id="gallery-inquiry-title" data-i18n="gallery_inquiry_title">Looking for more new products? Let’s talk.</h3>
+              <span data-i18n="gallery_inquiry_desc">Share your season, category and target price, and we’ll recommend more new arrivals and tailored ideas.</span>
+            </div>
+            <a class="gallery-inquiry-action" href="#contact">
+              <span data-i18n="gallery_inquiry_action">Ask about new products</span>
+              <i aria-hidden="true">↘</i>
+            </a>
+          </aside>
+        </section>
+      </section>
+
+      <section class="capability" id="capability">
+        <div class="section-shell split">
+          <div class="capability-copy reveal">
+            <p class="eyebrow" data-i18n="cap_eyebrow">Integrated manufacturer</p>
+            <h2 data-i18n="cap_title">Design, sampling and production under one roof.</h2>
+            <p data-i18n="cap_desc">
+              Founded in 1998 in Quanzhou, LANDY combines design development and manufacturing for
+              long-term retail partners including Hobby Lobby, Ross, Boltze and XXXLutz.
+            </p>
+          </div>
+          <div class="process-grid reveal">
+            <article data-glass data-lens>
+              <span>01</span>
+              <h3 data-i18n="proc_1_title">Trend study</h3>
+              <p data-i18n="proc_1_desc">Annual research through stores and shows in Europe and America.</p>
+            </article>
+            <article data-glass data-lens>
+              <span>02</span>
+              <h3 data-i18n="proc_2_title">Original design</h3>
+              <p data-i18n="proc_2_desc">Seasonal concept families, hand-painted finishes and material combinations.</p>
+            </article>
+            <article data-glass data-lens>
+              <span>03</span>
+              <h3 data-i18n="proc_3_title">Fast artwork</h3>
+              <p data-i18n="proc_3_desc">Custom development based on buyer themes, sketches and market needs.</p>
+            </article>
+            <article data-glass data-lens>
+              <span>04</span>
+              <h3 data-i18n="proc_4_title">Stable delivery</h3>
+              <p data-i18n="proc_4_desc">Consistent quality control and shipment planning for export programs.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="factory-proof-grid section-shell reveal" aria-label="Verified company facts">
+          <article><strong data-i18n="proof_materials_title">Multi-material production</strong><span data-i18n="proof_materials_desc">Polyresin, ceramic, fabric and metal products developed under one team.</span></article>
+          <article><strong data-i18n="proof_market_title">Market-led design</strong><span data-i18n="proof_market_desc">Annual store and trade-show research across Europe and North America.</span></article>
+          <article><strong data-i18n="proof_relationship_title">Long-term partnerships</strong><span data-i18n="proof_relationship_desc">More than 10 years of cooperation with established international retailers.</span></article>
+          <article><strong data-i18n="proof_recognition_title">Recognized reliability</strong><span data-i18n="proof_recognition_desc">Honored as a responsible and faithful factory by the Quanzhou government.</span></article>
+        </div>
+
+        <div class="brand-marquee-section reveal">
+          <div class="brand-marquee-title" data-i18n="brand_marquee_title">Trusted by Global Retail Leaders</div>
+          <div class="marquee-container">
+            <div class="marquee-track" id="marquee-track-1"></div>
+            <div class="marquee-track" id="marquee-track-2" aria-hidden="true"></div>
+          </div>
+          <div class="marquee-container marquee-container-secondary" aria-hidden="true">
+            <div class="marquee-track" id="marquee-track-3"></div>
+            <div class="marquee-track" id="marquee-track-4"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="showroom section-shell" id="showroom">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="show_eyebrow">Showroom moments</p>
+          <h2 data-i18n="show_title">A warm product world, edited with a modern interface.</h2>
+        </div>
+        <div class="showroom-grid">
+          <figure class="wide reveal" data-glass data-lens>
+            <img data-src="assets/images/showroom-ornaments.webp" loading="lazy" decoding="async" alt="Showroom ornaments hanging from a decorated branch" />
+            <figcaption data-i18n="fig_ornaments">Christmas ornament wall</figcaption>
+          </figure>
+          <figure class="reveal" data-glass data-lens>
+            <img data-src="assets/images/coastline.webp" loading="lazy" decoding="async" alt="Coastal decorative craft collection" />
+            <figcaption data-i18n="fig_coastal">Coastal decor</figcaption>
+          </figure>
+          <figure class="reveal" data-glass data-lens>
+            <img data-src="assets/images/thanksgiving.webp" loading="lazy" decoding="async" alt="Thanksgiving seasonal craft product" />
+            <figcaption data-i18n="fig_thanksgiving">Thanksgiving detail</figcaption>
+          </figure>
+        </div>
+        <div class="video-frame reveal" data-glass>
+          <video controls preload="none" poster="assets/images/christmas-collection.webp" data-lazy-video>
+            <source data-src="assets/video/company-showroom.mp4" type="video/mp4" />
+          </video>
+          <div>
+            <p class="eyebrow" data-i18n="video_eyebrow">Factory video</p>
+            <h3 data-i18n="video_title">See the showroom and product range in motion.</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <button class="contact-drawer-close" id="contact-drawer-close" type="button" aria-label="Collapse contact details">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 9 7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="contact-card section-shell" data-glass>
+          <div class="contact-product-context" id="contact-product-context" hidden>
+            <img id="contact-product-image" alt="" />
+            <div><small data-i18n="contact_selected_product">Selected product</small><strong id="contact-product-title"></strong><span id="contact-product-reference"></span></div>
+          </div>
+          <div class="contact-copy reveal">
+            <p class="eyebrow" data-i18n="contact_eyebrow">Contact</p>
+            <h2 data-i18n="contact_title">Build your next seasonal program with LANDY.</h2>
+            <p data-i18n="contact_address">
+              8th–9th Floors, Block A, No. 70 Taixin Street, Changtai Subdistrict, Licheng District, Quanzhou City, Fujian Province, P.R. China.
+            </p>
+          </div>
+          <div class="contact-links reveal">
+            <a href="mailto:landy@landycrea.com">landy@landycrea.com</a>
+            <a href="tel:+8613805990010">M: +86 138 0599 0010</a>
+            <a href="tel:+8659528883877">T: +86 595 2888 3877</a>
+            <a href="tel:+8659528883677">T: +86 595 2888 3677</a>
+            <a href="tel:+8659528887077">T: +86 595 2888 7077</a>
+          </div>
+        </div>
+      </section>
+      <button class="contact-drawer-backdrop" id="contact-drawer-backdrop" type="button" aria-label="Collapse contact details" tabindex="-1"></button>
+    </main>
+
+    <footer class="site-footer">
+      <span data-i18n="footer_copy">© 2026 Landy Creative Co., Ltd.</span>
+      <span data-i18n="footer_slogan">Creative · Honest · Harmony</span>
+    </footer>
+
+    <div class="lightbox" id="product-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true">
+      <div class="lightbox-panel">
+        <button class="lightbox-sheet-handle" type="button" aria-label="Drag down to close product details"><span></span></button>
+        <button class="lightbox-close" type="button" aria-label="Close product preview">×</button>
+        <div class="lightbox-media">
+          <img id="lightbox-image" alt="" />
+          <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous product">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="lightbox-mobile-position" id="lightbox-mobile-position" aria-live="polite"></span>
+          <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Next product">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="lightbox-details">
+          <p class="eyebrow" id="lightbox-path"></p>
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-meta"></p>
+          <dl class="lightbox-facts">
+            <div><dt data-i18n="lightbox_season">Season</dt><dd id="lightbox-season"></dd></div>
+            <div><dt data-i18n="lightbox_collection">Collection</dt><dd id="lightbox-collection"></dd></div>
+            <div><dt data-i18n="lightbox_category">Category</dt><dd id="lightbox-category"></dd></div>
+            <div><dt data-i18n="lightbox_reference">Reference</dt><dd id="lightbox-reference"></dd></div>
+          </dl>
+          <div class="lightbox-footer">
+            <span class="lightbox-position" id="lightbox-position" aria-live="polite"></span>
+            <button class="lightbox-inquiry" id="lightbox-inquiry" type="button" data-i18n="lightbox_inquiry">Inquire about this product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="site.js?v=20260825a"></script>
+  </body>
+</html>
